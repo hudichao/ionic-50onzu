@@ -1,0 +1,11 @@
+<ion-view view-title="常用句" class="frame-sentence">
+  <ion-content has-bouncing="false">
+    <div  class="dc-item selectable" ng-repeat="s in sentences" ng-click="playVoice(s.m)">
+      <span class="kana">{{s.kana}}</span>
+      <span class="meaning">{{s.m}}</span>
+    </div>
+    <audio id="audio_sentence">
+      <source type="audio/mp4">
+    </audio>
+  </ion-content>
+</ion-view>

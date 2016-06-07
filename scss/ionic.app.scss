@@ -1,0 +1,97 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+* {
+  font-family: 'Helvetica';
+}
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// 使得可以选中字
+// http://stackoverflow.com/questions/22893173/how-to-allow-copy-and-paste-from-an-ionic-webview
+.selectable {
+  -webkit-user-select: auto;
+}
+
+.frame-50on {
+  .dc-line {
+    display: flex;
+    justify-content: space-around;
+  }
+  .dc-title {
+    text-align: center;
+    margin: 15px 0;
+    margin-top: 25px;
+  }
+  .dc-title button {
+    margin-right: 20px;
+  }
+  .dc-title button:last-child {
+    margin-right: 0px;
+  }
+  .dc-item {
+    margin-bottom: 10px;
+    width: 20%;
+    font-size: 20px;
+    $width: 30px;
+    $height: 30px;
+    height: $height;
+    .kana {
+      display: inline-block;
+      margin-left: 10%;
+      border: 1px solid gray;
+   
+      width: $width;
+      height: $height;
+      line-height: $height; 
+      text-align: center;
+      &:hover {
+        background: #e3e3e3;
+      }
+    }
+    .romaji {
+      font-size: 12px;
+      color: #666;
+    }
+    
+    
+  }
+}
+.frame-sentence {
+  .dc-item {
+    font-size: 18px;
+    padding: 20px 15px;
+    margin: 10px 5px;
+    line-height: 1.8;
+    overflow: hidden;
+    border: 1px solid gray;
+    &:hover {
+      background: #e3e3e3;
+    }
+    .kana {
+      float: left;
+      width: 200px;
+    }
+    .meaning {
+      float: right;
+    }
+  }
+}
+
+
