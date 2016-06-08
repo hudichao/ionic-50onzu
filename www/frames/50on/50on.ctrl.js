@@ -71,7 +71,7 @@ angular.module("app.frame.50on")
     item = jaco.hiraganize(item);
     // 只有这个有用
     // http://stackoverflow.com/questions/23659395/can-i-use-angular-variables-as-the-source-of-an-audio-tag
-    document.getElementById('audio_50on').src = "/voice/50on/" + item + ".m4a";
+    document.getElementById('audio_50on').src = "voice/50on/" + item + ".m4a";
     document.getElementById('audio_50on').play();
   }
 

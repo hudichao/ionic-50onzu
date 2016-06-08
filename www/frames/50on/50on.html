@@ -10,7 +10,7 @@
       <button class="button" ng-class="{'button-calm' : isActive==='katagana'}"ng-click="switch('katagana')">片假名</button>
     </div>
     <div class="dc-line" ng-repeat="(lineIndex, line) in kana track by $index">
-      <div class="dc-item"   ng-repeat="(itemIndex, item) in line track by $index" ng-click="playVoice(item)">
+      <div class="dc-item"  ng-repeat="(itemIndex, item) in line track by $index" ng-click="playVoice(item)">
         <span class="kana" ng-if="item">{{item}}</span>
         <span class="romaji" ng-if="item">{{romaji[lineIndex][itemIndex]}}</span>
       </div>

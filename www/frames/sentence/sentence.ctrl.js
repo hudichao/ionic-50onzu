@@ -9,7 +9,7 @@ angular.module("app.frame.sentence")
     if (!item) return;
     // item = jaco.hiraganize(item);
     // 中文
-    document.getElementById('audio_sentence').src = "/voice/sentence/" + item + ".m4a";
+    document.getElementById('audio_sentence').src = "voice/sentence/" + item + ".m4a";
     document.getElementById('audio_sentence').play();
   }
 }])
